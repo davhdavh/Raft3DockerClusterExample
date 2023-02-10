@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "raft3dockerclusterexample_7097",
+      "composeLaunchUrl": "{Scheme}://{ServiceIPAddress}{ServicePort}/api/value/fullinfo",
+      "serviceActions": {
+        "raft3dockerclusterexample_7096": "StartDebugging",
+        "raft3dockerclusterexample_7097": "StartDebugging",
+        "raft3dockerclusterexample_7098": "StartDebugging"
+      }
+    }
+  }
+}

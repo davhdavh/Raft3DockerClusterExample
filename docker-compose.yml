@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  raft3dockerclusterexample_7098:
+    container_name: raft3dockerclusterexample_7098
+    image: ${DOCKER_REGISTRY-}raft3dockerclusterexample
+    build:
+      context: .
+      dockerfile: Dockerfile
+  raft3dockerclusterexample_7097:
+    container_name: raft3dockerclusterexample_7097
+    image: ${DOCKER_REGISTRY-}raft3dockerclusterexample
+    build:
+      context: .
+      dockerfile: Dockerfile
+  raft3dockerclusterexample_7096:
+    container_name: raft3dockerclusterexample_7096
+    image: ${DOCKER_REGISTRY-}raft3dockerclusterexample
+    build:
+      context: .
+      dockerfile: Dockerfile

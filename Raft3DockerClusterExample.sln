@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Raft3DockerClusterExample", "Raft3DockerClusterExample.csproj", "{1D330E03-F41D-4E1A-BF4A-C34DAA4B0D84}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A65ACAC9-911C-4795-8F0B-BE1788F4646B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D330E03-F41D-4E1A-BF4A-C34DAA4B0D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D330E03-F41D-4E1A-BF4A-C34DAA4B0D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D330E03-F41D-4E1A-BF4A-C34DAA4B0D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D330E03-F41D-4E1A-BF4A-C34DAA4B0D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65ACAC9-911C-4795-8F0B-BE1788F4646B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65ACAC9-911C-4795-8F0B-BE1788F4646B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65ACAC9-911C-4795-8F0B-BE1788F4646B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65ACAC9-911C-4795-8F0B-BE1788F4646B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5189760C-B96D-4330-A8DF-9AF0A43C464F}
+	EndGlobalSection
+EndGlobal
