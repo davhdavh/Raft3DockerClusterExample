@@ -1,4 +1,6 @@
+using DotNext.IO;
 using DotNext.Net.Cluster.Messaging;
+using DotNext.Runtime.Serialization;
 
 namespace Raft3DockerClusterExample;
 
@@ -7,7 +9,7 @@ public class TryMeHandler : JsonMessageHandler<TestMessagingDto, TestMessagingDt
    private readonly ILogger<TryMeHandler> _logger;
    public TryMeHandler(ILogger<TryMeHandler> logger) => _logger = logger;
 
-   public override Task<TestMessagingDto> OnMessage(TestMessagingDto message, CancellationToken token)
+   public override Task<TestMessagingDto> OnMessage(TestMessagingDto message, ISubscriber sender, object? _, CancellationToken token)
    {
       _logger.LogInformation($"Got {message.MyCustomValue}");
       return Task.FromResult<TestMessagingDto>(new("jens:" + message.MyCustomValue));
@@ -21,7 +23,7 @@ public class TryMeBroadcastHandler : JsonMessageHandler<TestMessagingDto, TryMeB
    private readonly ILogger<TryMeBroadcastHandler> _logger;
    public TryMeBroadcastHandler(ILogger<TryMeBroadcastHandler> logger) => _logger = logger;
 
-   public override Task OnMessage(TestMessagingDto message, CancellationToken token)
+   public override Task OnMessage(TestMessagingDto message, ISubscriber sender, object? _, CancellationToken token)
    {
       _logger.LogInformation($"Got Broadcast {message.MyCustomValue}");
       return Task.CompletedTask;
